@@ -1,2 +1,2 @@
 # Summer-20
-Interview Prep Kit, Different questions pf varying complexity solved from hackerrank and codeforces
+Different questions of varying complexity solved from the following topisc of data structure, dynamic programming, maths, string manipulation
