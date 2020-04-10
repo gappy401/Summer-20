@@ -1,7 +1,9 @@
 import java.util.*;
-public class Kmp
-{  public static void kmp(String lookup,String word)
-  {
+public class Ques1
+{
+    public static int kmp(String lookup,String word)
+    
+  { int sum=0;
     int m=word.length();
     int i=1,j=0;
     char pref[]=new char[lookup.length()];
@@ -48,8 +50,9 @@ public class Kmp
        }
            if(j1==n)
            {
-              System.out.println(i1-n);
+              //System.out.println(i1-n);
               j1=pre[j1-1];
+              sum++;
            }
 
        
@@ -68,18 +71,53 @@ public class Kmp
        }
     
 
-   }
+    }
+    return sum;
 
   }
-   public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner sc=new Scanner(System.in);
-        String lookup =sc.next();
-        String  word =sc.next();
-        kmp(lookup,word);
-       
-        sc.close();
+        int n=sc.nextInt();
+        int w=sc.nextInt();
+        char arr[]=new char[n];
+        char look1[]=new char[w];
+        char look2[]=new char[w];
+        char look3[]=new char[w];
+        String word;
+        for(int i=0;i<n;i++)
+        {
+            char x=sc.next().charAt(0);
+            arr[i]=x;
+           
 
+        }
+       
+        for(int i=0;i<w;i++)
+        {  
+            
+            char x=sc.next().charAt(0);
+            look1[i]=x;
+            x++;
+            look2[i]=x;
+            x--;
+            x--;
+            look3[i]=x;  
+
+        }
+        word=new String(arr);
+        String a=new String(look1);
+        String b=new String(look2);
+        String c=new String(look3);
+        int sum=0;
+        System.out.println(a+"   "+b+"   "+c);
+        sum+=kmp(a, word);
+        sum+=kmp(b, word);
+        sum+=kmp(c, word);
+        System.out.println(sum);
+
+
+
+        
     }
 
 }

@@ -2,7 +2,6 @@ import  java.util.*;
 import javafx.util.Pair;
 import java.util.Queue;
 
-import javax.lang.model.util.ElementScanner6;;
 public class Ques1 {
 
 

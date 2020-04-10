@@ -1,5 +1,5 @@
 #include<iostream>
-// 3 5 13
+// 3 13
 using namespace std;
 int main()
 {
