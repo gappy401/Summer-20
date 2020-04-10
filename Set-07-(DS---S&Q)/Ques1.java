@@ -1,149 +1,75 @@
 import  java.util.*;
+import javafx.util.Pair;
+import java.util.Queue;
+
+import javax.lang.model.util.ElementScanner6;;
 public class Ques1 {
-int arr[];
-int front;
-int rear;
-int max;
-Ques1(int size)
-{    arr=new int[size];
-     front=0;
-     rear=0;
-     max=size;
-
-}
-public void push(int x)
-	{
-		if (isFull())
-		{
-			System.out.println("OverFlow\nProgram Terminated\n");
-			System.exit(1);
-		}
-
-       // System.out.println("Inserting " + x);
-      
-        arr[rear] = x;
-        //System.out.println(front+ " "+rear);
-        rear=(rear+1)%max;
-        
-        
-	}
-
-	public int pop()
-	{
-		
-		if (isEmpty())
-		{
-			System.out.println("UnderFlow");
-			System.exit(1);
-		}
-
-       
-        int ret=arr[front];
-        front=(front+1)%max;
-       
-	///	System.out.println(ret);
-		return ret;
-	}
-
-	// Utility function to return top element in a stack
-	public int peek()
-	{
-		if (!isEmpty())
-			return arr[front];
-		else
-			System.exit(1);
-
-		return -1;
-	}
-
-	// Utility function to return the size of the stack
 
 
-	public Boolean isEmpty()
-	{
-        if((front)%max==rear )
-        return true;
-        else
-        return false;
+ public static void getpow(Queue<Integer>q,HashMap <Integer, Integer> ans,int x)
+  {
+     int n=q.size();
+     int loop=n-x+1;
+     int arr[]=new int[x];
+     int extra=x-loop;
+     
+     while(x>0)
+       {     
+            if(x<=n)
+           {
+               int max=-1000;
+                for (int i=0;i<x;i++)
+                   {    arr[i]=q.peek();
+                      int j=q.peek();
+                      // System.out.print(j+" ");
+                      q.remove();
+                      if(max<ans.get(j))
+                      {
+                          max=j;
+
+                      }
+                   }
+                System.out.println("MAX   "+max);
+                 System.out.println("Whats going back in array");
+         
+                for(int i1=0;i1<x;i1++)
+               {
+                   if(arr[i1]!=max)
+                   {   
+                        //System.out.print( arr[i1]+ ":"+ ans.get(arr[i1])+"     ");
+                      if(ans.get(arr[i1])>0)
+                      {
+                          ans.put(arr[i1], ans.get(arr[i1])-1);
+                      }
+                        q.add(arr[i1]);
+                   }
+               }
+              n--;
+            
+            
+            }
+                 else
+               {
+                  x=q.size();
+               }
+        }
     }
-	public Boolean isFull()
-	{
-		return (rear+1)%max==front ;	// or return size() == max;
-	}
 
 
-
-
-
+  
     public static void main(String args[])
     { Scanner s=new Scanner(System.in);
        int n= s.nextInt();
-        Ques1 q=new Ques1(n);
-        HashMap<Integer, Integer> map 
-        = new HashMap<>(); 
-
-        for(int i=0;i<n-1;i++)
-        { int x=s.nextInt();
-            q.push(x);
-            map.put(x,i);
-       
-        }
-        int x=s.nextInt();
-       
-        for (int i=0;i<n-1;i++)
-        {     int max_pow=0;
-            int max=0;
-            int ar[]=new int[x];
-            for(int j=0;j<x;j++)
-            {
-                int y=q.pop();
-               
-                System.out.print(y+ " ");
-                if(y<1)
-                {
-
-                }
-
-            else{
-                y--;
-
-            }
-            ar[j]=y;
-               
-                if(y>max_pow)
-                {
-                   
-                   
-                    max_pow=y;
-                   
-                }
-                
-               
-            }
-            for(int o=0;o<x;o++)
-                {
-                    if(ar[o] !=max_pow)
-
-                   {
-
-
-                   }
-                   else
-                   {
-                       q.push(-1);
-                   }
-                }
-                System.out.println(max_pow);
-            System.out.println(map.get(max_pow+i));
-
-        }
-       
-       
-        
-
+       Queue<Integer> q=new LinkedList<Integer>();
+       HashMap <Integer, Integer> ans  =  new HashMap <Integer, Integer> ();;
+       for(int i=0;i<n;i++)
+       {
+         ans.put(i, s.nextInt());
+         q.add(i);
+       }
+       int x=s.nextInt();
+       getpow(q, ans, x);
       
-       
-       
 
 
     }
