@@ -6,5 +6,3 @@
 [Question 2](https://www.hackerrank.com/challenges/merging-communities/problem)<br>
 [Question 3](https://www.hackerrank.com/challenges/components-in-graph/problem)<br>
 [Question 4](https://www.hackerrank.com/challenges/torque-and-development/problem)<br>
-[Question 5](https://www.hackerearth.com/practice/data-structures/disjoint-data-strutures/basics-of-disjoint-data-structures/practice-problems/algorithm/count-friends/)<br>
-[Question 6](https://www.hackerearth.com/practice/data-structures/disjoint-data-strutures/basics-of-disjoint-data-structures/practice-problems/algorithm/friends-and-foes/)<br>
