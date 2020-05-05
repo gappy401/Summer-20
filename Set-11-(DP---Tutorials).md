@@ -10,14 +10,12 @@
 [Longest Palindromic Subsequence](https://www.youtube.com/watch?v=_nCsPn7_OgI&index=9&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)<br>
 [Minimum Cost Path](https://www.youtube.com/watch?v=lBRtnuxg-gU&index=21&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)<br>
 [Minimum Jump](https://www.youtube.com/watch?v=cETfFsSTGJI&index=23&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)<br>
-
-[Question 1](https://www.hackerrank.com/contests/projecteuler/challenges/euler018) (Solve using recursion)<br>
-[Question 2](https://www.hackerrank.com/contests/projecteuler/challenges/euler067) (Solve using dp) <br>
-[Question 3](https://www.hackerrank.com/challenges/coin-change/problem)<br>
-[Question 4](https://www.hackerrank.com/challenges/sam-and-substrings/problem)<br>
-[Question 5](https://www.hackerrank.com/challenges/maxsubarray/problem)<br>
-[Question 6](https://www.hackerrank.com/challenges/unbounded-knapsack/problem)<br>
-[Question 7](http://codeforces.com/problemset/problem/550/C)<br>
-[Question 8](http://codeforces.com/problemset/problem/363/B)<br>
-[Question 9](http://codeforces.com/problemset/problem/476/B)<br>
-[Question 10](http://codeforces.com/problemset/problem/474/D)<br>
+[Question 1](https://www.hackerrank.com/contests/projecteuler/challenges/euler067) <br>
+[Question 2](https://www.hackerrank.com/challenges/coin-change/problem)<br>
+[Question 3](https://www.hackerrank.com/challenges/sam-and-substrings/problem)<br>
+[Question 4](https://www.hackerrank.com/challenges/maxsubarray/problem)<br>
+[Question 5](https://www.hackerrank.com/challenges/unbounded-knapsack/problem)<br>
+[Question 6](http://codeforces.com/problemset/problem/550/C)<br>
+[Question 7](http://codeforces.com/problemset/problem/363/B)<br>
+[Question 8](http://codeforces.com/problemset/problem/476/B)<br>
+[Question 9](http://codeforces.com/problemset/problem/474/D)<br>

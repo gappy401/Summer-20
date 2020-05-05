@@ -1,7 +1,5 @@
 import java.util.*;
 
-import javax.lang.model.util.ElementScanner6;
-
 public class Common_Subseq {
     public static int cal_seq(String x,String y)
     {
