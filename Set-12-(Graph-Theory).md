@@ -1,7 +1,7 @@
-[Graph Representation](https://www.hackerearth.com/practice/algorithms/graphs/graph-representation/tutorial/)<br>
 [Breadth First Search](https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/tutorial/)<br>
 [Depth First Search](https://www.hackerearth.com/practice/algorithms/graphs/depth-first-search/tutorial/)<br>
 [Topological Sort](https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/tutorial/)<br><br>
+<b>Practice Questions</b><br>
 [Question 1](https://www.hackerrank.com/challenges/bfsshortreach/problem)<br>
 [Question 2](https://www.hackerrank.com/challenges/the-quickest-way-up/problem)<br>
 [Question 3](http://codeforces.com/problemset/problem/862/B)<br>
@@ -13,5 +13,3 @@
 [Question 9](https://www.hackerearth.com/practice/algorithms/graphs/topological-sort/practice-problems/algorithm/oliver-and-the-game-3/)<br>
 Question 10 - Find the diameter of a tree. Complexity: O(N)<br>
 Question 11 - Find the shortest path for every pair of vertices in a weighted graph. Complexity: O(N<sup>3</sup>)
-
-Try solving questions from [Set 8](https://github.com/prashanthrebala/Summer-18/wiki/Set-08-(DS---Disjoint-Set)) using graphs this time.

@@ -1,6 +1,7 @@
 import java.util.*;
 import java.math.*;
-class Coin_Change{
+class Coin_Ways
+{
     public static int subset(int x,int coins[],int y)
     {
         int check[][]=new int[x][y+1];
@@ -11,7 +12,7 @@ class Coin_Change{
             {
                 if(j==0)
                 {
-                    check[i][j]=0;
+                    check[i][j]=1;
 
                 }
                 else
@@ -20,7 +21,7 @@ class Coin_Change{
                     {    System.out.println(i+" "+j);
                         if(coin<j)
                         {
-                            check[i][j]=check[i][j-1]+1;
+                            check[i][j]=check[i][j-coin];
                             //System.out.println(check[i][j] +"First enter in coin>j");
                         }
                         else 
@@ -51,7 +52,7 @@ class Coin_Change{
                         }
                         else
                         {
-                            check[i][j]= Math.min(check[i-1][j],(check[i][j-coin]+1));
+                            check[i][j]= check[i-1][j]+check[i][j-coin];
                         }
 
                     }
@@ -62,7 +63,7 @@ class Coin_Change{
             
             
         }
-      /*  for(int i=0;i<x;i++)
+        for(int i=0;i<x;i++)
         {
             int coin=coins[i];
             System.out.print(coin+" ");
@@ -71,7 +72,8 @@ class Coin_Change{
                 System.out.print(check[i][j]+" ");
             }
             System.out.println(" ");
-        }*/
+        }
+        
 
 
 
